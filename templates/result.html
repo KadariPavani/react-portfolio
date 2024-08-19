@@ -1,0 +1,21 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result Page</title>
+</head>
+<body>
+    <h1>Result for Subject: {{ subject }}</h1>
+    <h2>Recommended Books:</h2>
+    <ul>
+        {% for book in recommended_books %}
+            <li>{{ book }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Best Matching Book Details:</h2>
+    <p>Title: {{ best_matching_book.book_title }}</p>
+    <p>Author: {{ best_matching_book.author }}</p>
+    <p>Published Year: {{ best_matching_book.published_year }}</p>
+    <p>Similarity Score: {{ best_matching_book.similarity_score }}</p>
+</body>
+</html>

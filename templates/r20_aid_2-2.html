@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>E-commerce</title>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a><h1>KIEW <span>Library</span></h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="https://www.kietgroup.com/">College</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="{{ url_for('static', filename='IMAGES/Kiet_women-removebg-preview.png') }}" width="85px" height="45px">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                
+                  
+            </div>
+        </div>
+    </div>
+</div>
+
+    <br>
+    <br>
+    <br>
+    <div class="small-container">
+        <div class="wrapper">
+            <h2>SELECT SUBJECT</h2>
+            <div class="custom-form-container">
+                <div class="custom-form-inner">
+                    <form action="{{ url_for('result') }}" method="POST">
+                        <div class="student-option">
+                            <label for="subject_name"></label>
+                            <select id="subject_name" name="subject_name" required>
+                                <option value="PROBABILITY AND STATISTICS">PROBABILITY AND STATISTICS</option>
+                                <option value="COMPUTER ORGANIZATION">COMPUTER ORGANIZATION</option>
+                                <option value="FORMAL LANGUAGES AND AUTOMATA THEORY">FORMAL LANGUAGES AND AUTOMATA THEORY</option>
+                                <option value="DATA WAREHOUSING AND MINING">DATA WAREHOUSING AND MINING</option>
+                                <option value="MANAGERIAL ECONOMICS AND FINANCIAL ACCOUNTANCY">MANAGERIAL ECONOMICS AND FINANCIAL ACCOUNTANCY</option>
+                            </select>
+                        </div>
+                        <div class="submit-button">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <br><br>
+    <!--------------FOOTER------------------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 footer-col-2">
+                    <a class="f-logo">
+                        <h1>KIEW <span>Library</span></h1>
+                    </a>
+                    <p>The building blocks of Learning..</p>
+                </div>
+                <div class="col-6 footer-col-4">
+                    <h3>Follow Us</h3>
+                    <h3>
+                    <ul>
+                        <a href="https://www.instagram.com/kiet_group?igsh=eWJta3hqMWM4MWxk"><li>Instagram</li></a>
+                        <a href="https://youtube.com/@kakinadakiet?si=m8XR5S-nksCcSSK_"><li>Youtube</li></a>
+                        <a href="https://www.linkedin.com/school/kakinada-institute-of-engineering-and-technology/"><li> Linked In</li></a>
+
+                    </ul>
+                </h3>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright-reserved  @KW Library</p>
+        </div>
+    </div>
+</body>
+
+</html>

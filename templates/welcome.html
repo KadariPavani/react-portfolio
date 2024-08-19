@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>E-commerce</title>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a><h1>KIEW <span>Library</span></h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="https://www.kietgroup.com/">College</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="{{ url_for('static', filename='IMAGES/Kiet_women-removebg-preview.png') }}" width="85px" height="45px">
+          </div>
+        <div class="row">
+            <div class="col-1">
+                
+                  
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+    <section>
+
+        <div class="small-container">
+            <div class="wrapper">
+              <h2>SELECT STUDENT STREAM</h2>
+              <div class="custom-form-container">
+                <div class="custom-form-inner">
+                  <form class="stream-selection-form" id="streamForm">
+                    <div class="stream-option">
+                      <input type="radio" id="btech" name="stream" value="btech" required>
+                      <label for="btech">BTech</label>
+                    </div>
+                    <div class="stream-option">
+                      <input type="radio" id="diploma" name="stream" value="diploma" required>
+                      <label for="diploma">Diploma</label>
+                    </div>
+                    <div class="submit-button">
+                      <input type="submit" value="Select">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <script>
+            document.getElementById("streamForm").addEventListener("submit", function(event) {
+              event.preventDefault(); // Prevent default form submission
+          
+              var selectedStream = document.querySelector('input[name="stream"]:checked').value;
+          
+              if (selectedStream === "btech") {
+                window.location.href = "tech.html"; // Redirect to BTech page
+              } else if (selectedStream === "diploma") {
+                window.location.href = "dip.html"; // Redirect to Diploma page
+              }
+            });
+          </script>
+          
+        <br>
+        <br>
+        <br>
+    </section>
+
+
+
+
+
+
+
+
+    <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-6 footer-col-2">
+                  <a class="f-logo">
+                      <h1>KIEW <span>Library</span></h1>
+                  </a>
+                  <p>The building blocks of Learning..</p>
+              </div>
+              <div class="col-6 footer-col-4">
+                  <h3>Follow Us</h3>
+                  <h3>
+                  <ul>
+                      <a href="https://www.instagram.com/kiet_group?igsh=eWJta3hqMWM4MWxk"><li>Instagram</li></a>
+                      <a href="https://youtube.com/@kakinadakiet?si=m8XR5S-nksCcSSK_"><li>Youtube</li></a>
+                      <a href="https://www.linkedin.com/school/kakinada-institute-of-engineering-and-technology/"><li> Linked In</li></a>
+
+                  </ul>
+              </h3>
+              </div>
+          </div>
+          <hr>
+          <p class="copyright">copyright-reserved  @KW Library</p>
+      </div>
+  </div>
+</body>
+
+</html>
